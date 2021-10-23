@@ -1,0 +1,157 @@
+:root {
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  outline: none;
+}
+
+*:focus,
+*:active {
+  outline: 0;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #2c2c2c;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.pulse {
+  width: 100px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ec5046), to(#e702bf));
+  background-image: linear-gradient(90deg, #ec5046 0%, #e702bf 100%);
+}
+
+.pulse svg {
+  width: 50%;
+  fill: #fff;
+}
+
+.pulse::before, .pulse::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ec5046), to(#e702bf));
+  background-image: linear-gradient(90deg, #ec5046 0%, #e702bf 100%);
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.pulse:before {
+  -webkit-animation: pulse 3s ease-out infinite;
+          animation: pulse 3s ease-out infinite;
+}
+
+.pulse:after {
+  -webkit-animation: pulse 3s 0.7s ease-out infinite;
+          animation: pulse 3s 0.7s ease-out infinite;
+}
+
+@-webkit-keyframes pulse {
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
