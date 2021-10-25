@@ -112,9 +112,9 @@ body {
   background-image: linear-gradient(90deg, #ec5046 0%, #e702bf 100%);
 }
 
-.pulse svg {
-  width: 50%;
-  fill: #fff;
+.pulse i {
+  font-size: 24px;
+  color: #fff;
 }
 
 .pulse::before, .pulse::after {
