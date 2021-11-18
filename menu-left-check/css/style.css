@@ -129,20 +129,6 @@ body {
   transition: 0.4s;
 }
 
-.slide-menu__nav::-webkit-scrollbar {
-  width: 8px;
-}
-
-.slide-menu__nav::-webkit-scrollbar-track {
-  -webkit-box-shadow: 3px 3px 3px -3px rgba(77, 77, 77, 0.2) inset;
-          box-shadow: 3px 3px 3px -3px rgba(77, 77, 77, 0.2) inset;
-  background-color: #f9f9fd;
-}
-
-.slide-menu__nav::-webkit-scrollbar-thumb {
-  background: grey;
-}
-
 .trigger {
   display: none;
 }
@@ -156,6 +142,16 @@ body {
   background: #383838;
   border-radius: 50%;
   z-index: 30;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.trigger:checked ~ .hamburger {
+  left: 260px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .hamburger span {

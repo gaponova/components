@@ -13,24 +13,11 @@
     overflow-y: auto;
     transition: 1.5s;
     z-index: 20;
-
     // transition: left 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
     .trigger:checked~& {
       left: 0;
       transition: 0.4s;
-    }
-
-    &::-webkit-scrollbar {
-      width: 8px;
-    }
-
-    &::-webkit-scrollbar-track {
-      box-shadow: 3px 3px 3px -3px rgba(77, 77, 77, 0.2) inset;
-      background-color: #f9f9fd;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: grey;
     }
   }
 }
@@ -48,6 +35,13 @@
   background: rgb(56, 56, 56);
   border-radius: 50%;
   z-index: 30;
+  transition: 0.4s;
+
+  .trigger:checked~& {
+    left: 260px;
+    transition: 0.4s;
+    transform: rotate(360deg);
+  }
 
   span {
     position: relative;
