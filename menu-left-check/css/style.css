@@ -142,16 +142,6 @@ body {
   background: #383838;
   border-radius: 50%;
   z-index: 30;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.trigger:checked ~ .hamburger {
-  left: 260px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
 }
 
 .hamburger span {
