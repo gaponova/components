@@ -21,6 +21,7 @@ body {
     border-radius: 6px;
     margin: 0 10px;
     transition: 0.3s;
+    cursor: pointer;
 
     &.active {
       background: #000;

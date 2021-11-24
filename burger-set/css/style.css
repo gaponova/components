@@ -141,6 +141,7 @@ body {
   margin: 0 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .box .icon.active {
