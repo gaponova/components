@@ -48,6 +48,11 @@
 }
 
 @media (max-width: 1170px) {
+
+  .block__item {
+    margin-bottom: calc(20px + (50 - 20) * ((100vw - 320px) / (1170 - 320)));
+  }
+
   .block__body {
     padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1170 - 320)));
   }
